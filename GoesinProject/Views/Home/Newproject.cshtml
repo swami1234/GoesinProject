@@ -1,0 +1,545 @@
+﻿
+@{
+    ViewBag.Title = "GoesinProject";
+}
+
+<h2>Goes in Project</h2>
+<style>
+    button.button {
+        width: 100%;
+        height: 50px;
+    }
+
+    button.button1 {
+        width: 80%;
+        height: 30px;
+    }
+
+    button.button2 {
+        width: 20%;
+        background-color: cadetblue;
+        color: black;
+        font-size: larger;
+    }
+
+    button.button3 {
+        width: 735%;
+        height: 20px;
+    }
+
+    hr {
+        border: 3px solid black;
+        background-color: mediumvioletred;
+        height: 4px;
+    }
+
+    span.fizz-buzz {
+        color: blue;
+        font-size: medium;
+    }
+</style>
+
+<div class=" row">
+    <div class=" col-md-12 text-center h2">Web Design</div>
+</div>
+<div class=" row">
+    <div class=" col-md-12"></div>
+</div>
+<div class=" row">
+    <div class=" col-md-3">
+        <button class=" btn btn-info button" data-toggle="modal" data-target="#MathModal">Math</button>
+    </div>
+    <div class=" col-md-3">
+        <button class=" btn btn-warning button" data-toggle="modal" data-target="#FactorialModal">Factorial</button>
+    </div>
+    <div class=" col-md-3">
+        <button class=" btn btn-primary button" data-toggle="modal" data-target="#PalindromeModal">Palindrome</button>
+    </div>
+    <div class="col-md-3">
+        <button class=" btn btn-success button" data-toggle="modal" data-target="#Fizz-BuzzModal">Fizz-Buzz</button>
+    </div>
+</div>
+
+<hr />
+
+<div class=" row">
+    <div class=" col-md-offset-4 col-md-4">
+        <button class=" btn btn-danger button" data-toggle="modal" data-target="#AllWorkInOneModal">All Work in One </button>
+    </div>
+</div>
+
+@*Now bring the modal here so when click its displays*@
+
+<div id="MathModal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Math Programs</h4>
+            </div>
+            <div class="modal-body">
+                <div class=" container-fluid">
+                    <div class=" row">
+                        <div class=" col-md-6 h4">Enter Number 1:</div>
+                        <div class=" col-md-6">
+                            <input id="one" type="number" class="formInput" />
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class=" col-md-6 h4">Enter Number 2:</div>
+                        <div class=" col-md-6">
+                            <input id="two" type="number" class="formInput" />
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class=" col-md-6 h4">Enter Number 3:</div>
+                        <div class=" col-md-6">
+                            <input id="three" type="number" class="formInput" />
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class=" col-md-6 h4">Enter Number 4:</div>
+                        <div class=" col-md-6">
+                            <input id="four" type="number" class="formInput" />
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class=" col-md-6 h4">Enter Number 5:</div>
+                        <div class=" col-md-6">
+                            <input id="five" type="number" class="formInput" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class=" row">
+                        <div class=" col-md-6 text-center h4">
+                            <button class="btn btn-primary" id="btnclick">calculate</button>
+                        </div>
+                        <div class=" col-md-6 text-center h4">
+                            <button class="btn btn-primary" id="checks">Show/Hide</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class=" row">
+                        <div class=" col-md-4">
+                            <div class=" row">
+                                <div class=" col-md-2 h4">
+                                    Min:
+                                </div>
+                                <div class=" col-md-10 text-center h4">
+                                    <p id="minresult" class="formInput"></p>
+                                </div>
+                            </div>
+                            <div class=" row">
+                                <div class=" col-md-2 h4">
+                                    Max:
+                                </div>
+                                <div class=" col-md-10 text-center h4">
+                                    <p id="maxresult" class="formInput"></p>
+                                </div>
+                            </div>
+                            <div class=" row">
+                                <div class=" col-md-2 h4">
+                                    Sum:
+                                </div>
+                                <div class=" col-md-10 text-center h4">
+                                    <p id="sumresult" class="formInput"></p>
+                                </div>
+                            </div>
+                            <div class=" row">
+                                <div class=" col-md-2 h4">
+                                    Mean:
+                                </div>
+                                <div class=" col-md-10 text-center h4">
+                                    <p id="meanresult" class="formInput"></p>
+                                </div>
+                            </div>
+                            <div class=" row">
+                                <div class=" col-md-2 h4">
+                                    Product:
+                                </div>
+                                <div class=" col-md-10 text-center h4">
+                                    <p id="productresult" class="formInput"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" col-md-8 text-center h6">
+                            <div id="syntaxresult" class=" formInput">
+                                <pre class="brush: js">
+            $("#btnclick").click(function () {
+
+                var num1 = +$("#one").val();
+                var num2 = +$("#two").val();
+                var num3 = +$("#three").val();
+                var num4 = +$("#four").val();
+                var num5 = +$("#five").val();
+
+                var min = Math.min(num1, num2, num3, num4, num5);
+                $("#minresult").text(min);
+
+                var max = Math.max(num1, num2, num3, num4, num5);
+                $("#maxresult").text(max);
+
+                var sum = num1 + num2 + num3 + num4 + num5;
+                $("#sumresult").text(sum);
+
+                var mean = sum / 5;
+                $("#meanresult").text(mean);
+
+                var product = num1 * num2 * num3 * num4 * num5;
+                $("#productresult").text(product);
+
+            });
+            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="FactorialModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Try Factorial Exercise</h3>
+            </div>
+            <div class="modal-body">
+                <div class=" row h4">
+                    Enter Num: <input id="num">
+                    <button onclick="show()" class=" btn btn-success">Factorial</button>
+                    <input id="answer">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="PalindromeModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Try Palindrome Exercise</h3>
+            </div>
+            <div class="modal-body h3">
+                Enter any word: <input input="text" id="text" />
+
+                <input type="submit" value="check" onclick="palindrome()" button class=" btn btn-primary">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="Fizz-BuzzModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 text-center h4">
+                        <p>Enter the Fizz Number:</p>
+                        <input id="fizzNum" type="number" name="fizz" class="formInput" value="3" />
+                    </div>
+                    <div class="col-md-6 text-center h4">
+                        <p>Enter the Buzz Number:</p>
+                        <input id="buzzNum" type="number" name="buzz" class="formInput" value="5" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <input type="button" class="btn btn-primary h4" value="Fizz Buzz" onclick="check()" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="fbResult" class="h4 formInput"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="AllWorkInOneModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">All Work</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <h3>Try our Exercises Below</h3>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#math">Math</a></li>
+                        <li><a data-toggle="tab" href="#factorial">Factorial</a></li>
+                        <li><a data-toggle="tab" href="#palindrome">Palindrome</a></li>
+                        <li><a data-toggle="tab" href="#fizzbuzz">Fizz-Buzz</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        
+
+                        <div id="factorial" class="tab-pane fade">
+
+                            <div class=" container-fluid">
+                                <div class=" row">
+                                    <h3>Factorial</h3>
+                                    Enter Num: <input id="num1">
+                                    <button onclick="show1()" class=" btn btn-success">Factorial</button>
+                                    <input id="answer1">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div id="palindrome" class="tab-pane fade">
+                            <h3>Palindrome</h3>
+                            <p>Try our Panlindrome Exercise.</p>
+                            Enter any word: <input type="text" id="text1">
+
+                            <input type="submit" value="check" class="btn btn-info" onclick="palindrome1()">
+
+                        </div>
+                        <div id="fizzbuzz" class="tab-pane fade">
+                            <div class=" container-fluid">
+                                <div class=" row h3">Fizz-Buzz</div>
+
+                                <div class="row">
+                                    <div class="col-md-6 text-center h4">
+                                        <p>Enter the Fizz Number:</p>
+                                        <input id="fizzNum1" type="number" name="fizz" class="formInput" value="3" />
+                                    </div>
+                                    <div class="col-md-6 text-center h4">
+                                        <p>Enter the Buzz Number:</p>
+                                        <input id="buzzNum1" type="number" name="buzz" class="formInput" value="5" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <input type="button" class="btn btn-info h4" value="Fizz Buzz" onclick="check1()" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="fbResult1" class="h4 formInput"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default button2" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+@section scripts {
+
+    <script>
+
+
+        $(function () {
+
+            $("#syntaxresult").hide();
+
+
+            $("#btnclick").click(function () {
+
+                var num1 = +$("#one").val();
+                var num2 = +$("#two").val();
+                var num3 = +$("#three").val();
+                var num4 = +$("#four").val();
+                var num5 = +$("#five").val();
+
+                var min = Math.min(num1, num2, num3, num4, num5);
+                $("#minresult").text(min);
+
+                var max = Math.max(num1, num2, num3, num4, num5);
+                $("#maxresult").text(max);
+
+                var sum = num1 + num2 + num3 + num4 + num5;
+                $("#sumresult").text(sum);
+
+                var mean = sum / 5;
+                $("#meanresult").text(mean);
+
+                var product = num1 * num2 * num3 * num4 * num5;
+                $("#productresult").text(product);
+
+            });
+
+
+            $("#checks").click(function () {
+                $("#syntaxresult").toggle();
+            });
+
+        });
+
+    </script>
+    <script>
+        function show() {
+
+            var i, no, fact;
+            fact = 1;
+            no = Number(document.getElementById("num").value);
+            for (i = 1; i <= no; i++) {
+                fact = fact * i;
+            }
+            document.getElementById("answer").value = fact;
+        }
+    </script>
+    <script>
+        function show1() {
+
+            var i, no, fact;
+            fact = 1;
+            no = Number(document.getElementById("num1").value);
+            for (i = 1; i <= no; i++) {
+                fact = fact * i;
+            }
+            document.getElementById("answer1").value = fact;
+        }
+    </script>
+    <script>
+        function FizzBuzzA(value1, value2) {
+            let returnValue = "";
+            for (let i = 1; i <= 100; i++) {
+                if (i % value1 == 0 && i % value2 == 0) {
+                    returnValue += 'FizzBuzz ';
+                }
+                else if (i % value1 == 0) {
+                    returnValue += 'Fizz ';
+                }
+                else if (i % value2 == 0) {
+                    returnValue += 'Buzz ';
+                }
+                else {
+                    returnValue += i + ' ';
+                }
+            }
+            return returnValue;
+        }
+        function check() {
+            let output = "";
+            let val1 = document.getElementById('fizzNum').value;
+            let val2 = document.getElementById('buzzNum').value;
+            output = FizzBuzzA(val1, val2);
+            document.getElementById('fbResult').innerHTML = output;
+        }</script>
+    <script>
+        function FizzBuzzA(value1, value2) {
+            let returnValue = "";
+            for (let i = 1; i <= 100; i++) {
+                if (i % value1 == 0 && i % value2 == 0) {
+                    returnValue += '<b>FizzBuzz</b> ';
+                }
+                else if (i % value1 == 0) {
+                    returnValue += '<span class="Fizz">Fizz</span> ';
+                }
+                else if (i % value2 == 0) {
+                    returnValue += 'Buzz ';
+                }
+                else {
+                    returnValue += i + ' ';
+                }
+            }
+            return returnValue;
+        }
+        function check1() {
+            let output = "";
+            let val1 = document.getElementById('fizzNum1').value;
+            let val2 = document.getElementById('buzzNum1').value;
+            output = FizzBuzzA(val1, val2);
+            document.getElementById('fbResult1').innerText = output;
+        }</script>
+    <script type="text/javascript">
+        function palindrome1()  // creating a funtion with name palidrome.
+        {
+            revString = ""; // create a variable name revString which stores input string reversely in this varaiable.
+            inpString = document.getElementById("text1").value;// creating input variable and storing input value from text field.
+            // var input = $("#txtword").val();
+            i = inpString.length; // creating a variable i and assigning the input string to it, which number of characters in input string.
+
+            for (var j = i; j >= 0; j--) //looping through input string in reverse order. >= means graeter than equal to 1.
+            {
+                revString = revString + inpString.charAt(j);
+                //  document.write(revString + "<br>"); outputing revString on web page. this helpsu schek if we are getting reverse string or not.
+            }
+
+            if (inpString.toLowerCase() === revString.toLowerCase()) {               // === means equal in both value and type.
+                alert(inpString + " is a Palindrome.");
+            }
+            else {
+                alert(inpString + " is not a Palindrome.");
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function palindrome()  // creating a funtion with name palidrome.
+        {
+            revString = ""; // create a variable name revString which stores input string reversely in this varaiable.
+            inpString = document.getElementById("text").value;// creating input variable and storing input value from text field. solve this by striping space out(???)
+            // var input = $("#txtword").val();
+            i = inpString.length; // creating a variable i and assigning the input string to it, which number of characters in input string.
+
+            for (var j = i; j >= 0; j--) //looping through input string in reverse order. >= means graeter than equal to 1.
+            {
+                revString = revString + inpString.charAt(j);
+                //  document.write(revString + "<br>"); outputing revString on web page. this helpsu schek if we are getting reverse string or not.
+            }
+
+            if (inpString.toLowerCase() == revString.toLowerCase()) {               // === means equal in both value and type.
+                alert(inpString + " is a Palindrome.");
+            }
+            else {
+                alert(inpString + " is not a Palindrome.");
+            }
+        }
+    </script>
+}

@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class=" container-fluid">
+
+    <div class=" row h3">New method for Palindrome</div>
+
+    <div class=" row">
+        <div class=" col-md-6 h2 ">
+            Enter the word:
+        </div>
+        <div class=" col-md-6">
+            <input type="text" id="txt1" />
+        </div>
+    </div>
+        <div class=" row">
+            <button class=" btn btn-info" onclick="myfunction()">Find</button>
+        </div>
+        
+          
+
+    
+</div>
+
+<script>
+    function myfunction() {
+        var str = document.getElementById('txt1').value;
+        var result = check(str);
+        alert('The entered string "' + str+ '"is"' + result + ' " ');
+
+        function check(str) {
+            var originalStr;
+            str = str.toLowerCase();
+
+            originalStr = str;
+
+            str = str.split('');
+            str = str.reverse('');
+            str = str.join('');
+
+            var reverseStr = str;
+
+            if (originalStr == reverseStr) {
+                return "palindrome";
+            }
+            else {
+                return 'not a palindrome';
+            }
+        }
+
+
+    }
+
+</script>

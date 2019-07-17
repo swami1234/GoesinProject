@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Tester";
+}
+<h2>Tester</h2>
+
+<div class=" container-fluid">
+    <div class=" row h3">New method for Palindrome</div>
+    <div class=" row">
+        <div class=" col-md-6">
+            Enter the word:
+        </div>
+        <div class=" col-md-6">
+            <input type="text" id="txt1" />
+        </div>
+        <div class=" row">
+            <button class=" btn btn-info" type="button" id="btn">Find</button>
+        </div>
+        <div class=" row">
+            <div class=" col-md-6">
+                Result:
+            </div>
+            <div class=" col-md-6">
+                <p id="rst"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $("btn").click(function () {
+
+        var input = $("txt1").val();
+
+        var output = checkIfPalindrome(input);
+
+        //if (isPalindrome(input)) {
+        if (input == output) {
+            $('rst').text(
+                'The word ' +
+                input +
+                ' is a palindrome!'
+            )
+        }
+    })
+
+    function checkIfPalindrome(word) {
+        //return word === word.split('').reverse().join('');
+        return word.split('').reverse().join('');
+    }
+    return output;
+
+</script>
