@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 using System.Web.Configuration;
 using System.Net.Mail;
+using GoesinProject.Models;
 
 namespace GoesinProject.Controllers
 {
@@ -45,6 +46,27 @@ namespace GoesinProject.Controllers
         public ActionResult SinglePost()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> ContactAsync(EmailModel model)
+        {
+            var from = WebConfigurationManager.AppSettings["emailfrom"];
+            var to = from;
+            from = $"{model.FromEmail}<{from}>";
+
+            var emailMessage = new MailMessage(from, to)
+            {
+                Subject = "Contact Email sent from portfolio",
+                Body = model.Message,
+                IsBodyHtml = true
+            };
+
+            var svc = new PersonalEmail();
+
+            await svc.SendAsync(emailMessage);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

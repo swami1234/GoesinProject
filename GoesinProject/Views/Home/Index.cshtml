@@ -1,4 +1,6 @@
-﻿@{
+﻿@model GoesinProject.Models.EmailModel
+
+@{
     /**/
 
     Layout = null;
@@ -84,6 +86,7 @@
                 <a href="#menu-toggle" id="menu-toggle"><i class="lnr lnr-menu"></i></a>
                 <header id="home" style="background-image:url(/images/aaa.jpg)">
                     <div class="header-content">
+
                     </div>
                     <div class=" row">
                         <div class=" col-md-2">
@@ -118,22 +121,23 @@
                         </div>
                         <div class=" col-md-6"></div>
                     </div>
-                </header>
 
-              
+                </header>
+                <div class="header-content space-left-2x">
+                    <h2>Hello<span class="text-primary">.</span> I am <span class="text-primary">Sarvesh Patel</span></h2>
+                    <h3>My<span class="text-primary"></span>.<span class="text-primary">Portfolio</span></h3>
+
+                    <p>This Portfolio Shows Coding Challanges/Javascript Exercises/ASP.NET MVC/WEB API projects completed at Coder Foundry </p>
+                </div>
+
 
                 <!-- / header -->
                 <!-- about -->
                 <section id="about">
 
                     <div class="container">
-                        <div class="page-header space-left">
-                            <div class="header-content">
-                                <h2>Hello<span class="text-primary">.</span> I am <span class="text-primary">Sarvesh Patel</span></h2>
-                                <h3>My<span class="text-primary"></span>.<span class="text-primary">Portfolio</span></h3>
+                        <div class="page-header space-left ">
 
-                                <p>This Portfolio Shows Coding Challanges/Javascript Exercises completed at Coder Foundry </p>
-                            </div>
 
                             <h3>About Me<span class="text-primary">.</span></h3>
                         </div>
@@ -155,7 +159,7 @@
                                     </div>
                                     <h5>Bithdate</h5>
                                 </div>
-                                <p>OCTOBER</p>
+                                <p>21st OCTOBER</p>
                             </div><!-- / feature -->
                             <div class="col-md-4 feature-left space-bottom">
                                 <div class="feature block">
@@ -164,7 +168,7 @@
                                     </div>
                                     <h5>Address</h5>
                                 </div>
-                                <p>Winston Salem NC</p>
+                                <p>Winston Salem, NC</p>
                             </div><!-- / feature -->
                         </div><!-- / row -->
                         <!-- / features -->
@@ -186,8 +190,9 @@
                                 <!-- fact -->
                                 <div class="col-md-4">
                                     <i class="fact-icon lnr lnr-pencil"></i>
-                                    <h3 class="timer" id="logos" data-to="1" data-speed="1500">324</h3>
-                                    <h5 class="fact-title">C# Training (Online)</h5>
+                                    <h3 class="timer" id="logos" data-to="2" data-speed="1500">324</h3>
+                                    <h5 class="fact-title">C#, MVC   training (Online)</h5>
+
                                 </div>
                                 <!-- /fact -->
                                 <!-- fact -->
@@ -214,6 +219,8 @@
                             <div class="row">
                                 <!-- progress-bars left -->
                                 <div class="col-sm-6">
+
+                                    <img src="~/images/C# image.png" />
                                     <h6 class="progress-title">C#</h6>
                                     <div class="progress">
                                         <div class="progress-bar progress-bar-primary animated fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
@@ -277,10 +284,10 @@
                                 <div class="timeline-point  off-timeline-point  point-color"></div>
                                 <div class="row">
                                     <div class="col-md-3 timeline-info">
-                                        <p class="timeline-date">June,2019-Current</p>
+                                        <p class="timeline-date"><span class=" text-primary">June,2019-Current</p></span>
                                         <h4 class="timeline-com">Coder Foundry</h4>
                                         <h6 class="timeline-role">Web development</h6>
-                                        <p class="timeline-location">Kernersville, NC</p>
+                                        <p class="timeline-location"><span class="text-primary">Kernersville, NC</p></span>
                                     </div><!-- / timeline-info -->
                                     <div class="col-md-9 timeline-details">
                                         <p>
@@ -294,10 +301,27 @@
                                 <div class="timeline-point  off-timeline-point  point-color"></div>
                                 <div class="row">
                                     <div class="col-md-3 timeline-info">
-                                        <p class="timeline-date">2006-2010</p>
+                                        <p class="timeline-date"><span class=" text-primary">March,2019-June,2019</p></span>
+                                        <h4 class="timeline-com">Private Training</h4>
+                                        <h6 class="timeline-role">Web development</h6>
+                                        <p class="timeline-location"><span class=" text-primary">Online</p></span>
+                                    </div><!-- / timeline-info -->
+                                    <div class="col-md-9 timeline-details">
+                                        <p>
+                                            C# and Asp.net Mvc Training
+                                        </p>
+
+                                    </div><!-- / timeline-details -->
+                                </div><!-- / row -->
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-point  off-timeline-point  point-color"></div>
+                                <div class="row">
+                                    <div class="col-md-3 timeline-info">
+                                        <p class="timeline-date"><span class="text-primary">2006-2010</p></span>
                                         <h4 class="timeline-com">High-Point University</h4>
                                         <h6 class="timeline-role">Science Credits</h6>
-                                        <p class="timeline-location">High-Point, NC</p>
+                                        <p class="timeline-location"><span class="text-primary">High-Point, NC</p></span>
                                     </div><!-- / timeline-info -->
                                     <div class="col-md-9 timeline-details">
                                         <p>
@@ -313,10 +337,10 @@
                                 <div class="timeline-point  off-timeline-point  point-color"></div>
                                 <div class="row">
                                     <div class="col-md-3 timeline-info">
-                                        <p class="timeline-date">2010-2013</p>
+                                        <p class="timeline-date"><span class="text-primary">2010-2013</p></span>
                                         <h4 class="timeline-com">RGUHS</h4>
                                         <h6 class="timeline-role">Bachelors of Science(Pharmacy)</h6>
-                                        <p class="timeline-location">India</p>
+                                        <p class="timeline-location"><span class="text-primary">India</p></span>
                                     </div><!-- / timeline-info -->
                                     <div class="col-md-9 timeline-details">
                                         <p>
@@ -328,12 +352,17 @@
                         </div><!-- / timeline -->
                     </div><!-- / container -->
                 </section>
-                <!-- / education -->
-                <!-- portfolio section 3col -->
+
+                
+            
+                
+     
+       
+
                 <section id="portfolio">
                     <div class="container">
                         <div class="page-header space-">
-                            <h3>Portfolio<span class="text-primary">.</span></h3>
+                            <h3>Current Portfolio<span class="text-primary">.</span></h3>
                         </div>
 
                         <ul class="row portfolio list-unstyled" id="grid">
@@ -527,16 +556,16 @@
                                                                                         <pre class="brush: js">
                                                                                            
 
-            function show1() {
+                                                                                            function show1() {
 
-            var i, no, fact;
-            fact = 1;
-            no = Number(document.getElementById("num1").value);
-            for (i = 1; i <= no; i++) {
-                fact = fact * i;
-            }
-            document.getElementById("answer1").value = fact;
-        }
+                                                                                            var i, no, fact;
+                                                                                            fact = 1;
+                                                                                            no = Number(document.getElementById("num1").value);
+                                                                                            for (i = 1; i <= no; i++) {
+                                                                                                fact = fact * i;
+                                                                                            }
+                                                                                            document.getElementById("answer1").value = fact;
+                                                                                        }
                                                                                         </pre>
                                                                                     </div>
                                                                                 </div>
@@ -569,26 +598,26 @@
                                                                                 <pre class="brush: js">
                                                                                            
 
-           $("#pali1").click(function () {
+                                                                                                                       $("#pali1").click(function () {
 
-    revString = ""; // create a variable name revString which stores input string reversely in this varaiable.
-    inpString = document.getElementById("text1").value;// creating input variable and storing input value from text field.
-    // var input = $("#txtword").val();
-    i = inpString.length; // creating a variable i and assigning the input string to it, which number of characters in input string.
+                                                                                                                revString = ""; // create a variable name revString which stores input string reversely in this varaiable.
+                                                                                                                inpString = document.getElementById("text1").value;// creating input variable and storing input value from text field.
+                                                                                                                // var input = $("#txtword").val();
+                                                                                                                i = inpString.length; // creating a variable i and assigning the input string to it, which number of characters in input string.
 
-    for (var j = i; j >= 0; j--) //looping through input string in reverse order. >= means greater than equal to 1.
-    {
-        revString = revString + inpString.charAt(j);
-        //  document.write(revString + "<br>"); outputing revString on web page. this helps us chek if we are getting reverse string or not.
-    }
+                                                                                                                for (var j = i; j >= 0; j--) //looping through input string in reverse order. >= means greater than equal to 1.
+                                                                                                                {
+                                                                                                                    revString = revString + inpString.charAt(j);
+                                                                                                                    //  document.write(revString + "<br>"); outputing revString on web page. this helps us chek if we are getting reverse string or not.
+                                                                                                                }
 
-    if (inpString.toLowerCase() === revString.toLowerCase()) {               // === means equal in both value and type.
-        alert(inpString + " is a Palindrome.");
-    }
-    else {
-        alert(inpString + " is not a Palindrome.");
-    }
-});
+                                                                                                                if (inpString.toLowerCase() === revString.toLowerCase()) {               // === means equal in both value and type.
+                                                                                                                    alert(inpString + " is a Palindrome.");
+                                                                                                                }
+                                                                                                                else {
+                                                                                                                    alert(inpString + " is not a Palindrome.");
+                                                                                                                }
+                                                                                                            });
                                                                                         </pre>
                                                                             </div>
                                                                         </div>
@@ -699,12 +728,12 @@
                             <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
                                 <figure>
                                     <div class="hovereffect">
-                                        <img class="img-fluid" src="https://i.imgur.com/xpuYSQd.jpg" alt="Sample image">
+                                        <img class="img-fluid" src="https://i.imgur.com/9OdGeP0.jpg" alt="Sample image">
 
                                         <a href="https://bugtrackerone.azurewebsites.net">
                                             <div class="overlay">
                                                 <div class="hovereffect-title">
-                                                    <h6>Bug Tracker One Project</h6>
+                                                    <h6>Bug Tracker Project</h6>
                                                 </div>
                                             </div>
                                         </a>
@@ -714,25 +743,8 @@
 
                                 <!-- sizer -->
                             <li class="col-xs-6 col-md-4 shuffle_sizer"></li>
-
-                            <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
-                                <figure>
-                                    <div class="hovereffect">
-                                        <img class="img-fluid" src="https://i.imgur.com/9OdGeP0.jpg" alt="Sample image">
-
-                                        <a href="#" data-toggle="modal" data-target="#portfolioModal">
-                                            <div class="overlay">
-                                                <div class="hovereffect-title">
-                                                    <h6>Bug Tracker Two Project</h6>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </figure>
-
-                                <!-- sizer -->
-                            <li class="col-xs-6 col-md-4 shuffle_sizer"></li>
+                        </ul><!-- / row portfolio-items -->
+                        <ul class="row portfolio list-unstyled" id="grid">
 
                             <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
                                 <figure>
@@ -756,31 +768,12 @@
                             <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
                                 <figure>
                                     <div class="hovereffect">
-                                        <img class="img-fluid" src="https://i.imgur.com/b0IsSfP.jpg"" alt="Sample image">
-
-                                        <a href="#" data-toggle="modal" data-target="#portfolioModal">
-                                            <div class="overlay">
-                                                <div class="hovereffect-title">
-                                                    <h6>Advanced CMS Project (Content Management System)</h6>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </figure>
-
-                                <!-- sizer -->
-                            <li class="col-xs-6 col-md-4 shuffle_sizer"></li>
-
-                            <li class="col-xs-6 col-md-4 project" data-groups='["design", "creative"]'>
-                                <figure>
-                                    <div class="hovereffect">
                                         <img class="img-fluid" src="https://i.imgur.com/jZ3N88r.jpg" alt="Sample image">
 
                                         <a href="#" data-toggle="modal" data-target="#portfolioModal">
                                             <div class="overlay">
                                                 <div class="hovereffect-title">
-                                                    <h6>Web Api Project</h6>
+                                                    <h6>Web Api Project Coming soon</h6>
                                                 </div>
                                             </div>
                                         </a>
@@ -791,11 +784,19 @@
                                 <!-- sizer -->
                             <li class="col-xs-6 col-md-4 shuffle_sizer"></li>
 
-                        </ul><!-- / row portfolio-items -->
+                            
+
+
+                        </ul>
+
+
                     </div><!-- / container -->
                 </section>
+
+              
+                  
+             
                 <!-- / portfolio section 3col -->
-               
                 <!-- contact -->
                 <section id="contact">
                     <div class="container">
@@ -845,23 +846,26 @@
                             <div class="col-md-6">
                                 <!-- contact form-->
                                 <div id="contact-form-1">
-                                    <form id="contactForm" data-toggle="validator">
+                                   @using (Html.BeginForm("ContactAsync", "Home", FormMethod.Post))
+                                   {
+                                       @Html.AntiForgeryToken()
+
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                            <input type="text" class="form-control" id="FromName" name="FromName" placeholder="Full Name" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                            <input type="email" class="form-control" id="FromEmail" name="FromEmail" placeholder="Email" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <textarea id="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                                            <textarea id="message" name="Message" class="form-control" rows="5" placeholder="Message" required></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <button type="submit" id="form-submit" class="btn btn-md btn-primary-filled btn-form-submit">Send Message</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
-                                    </form>
+                                   }
                                 </div><!-- / contact form -->
                             </div><!-- / col-md-6 -->
                         </div><!-- / row -->
@@ -880,72 +884,73 @@
                 <a href="#top" class="scroll-to-top page-scroll is-hidden" data-nav-status="toggle"><i class="fa fa-angle-up"></i></a>
                 <!-- / scroll to top -->
             </div><!-- / container-fluid -->
-        </div><!-- / page-content-wrapper -->
-    </div><!-- / wrapper -->
-    <!-- javascript -->
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/jquery.easing.min.js"></script>
-    <!-- menu toggle script -->
-    <script>
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
-    <!-- / menu toggle script -->
-    <!-- nav scroll -->
-    <script src="~/js/scrolling-nav.js"></script>
-    <script>
-        $(".sidebar-nav a").on("click", function () {
-            $(".sidebar-nav").find(".active").removeClass("active");
-            $(this).parent().addClass("active");
-        });
-    </script>
-    <!-- / nav scroll -->
-    <!-- contact form -->
-    <script src="~/js/validator.min.js" type="text/javascript"></script>
-    <script src="~/js/form-scripts.js" type="text/javascript"></script>
-    <!-- / contact form -->
-    <!-- facts counter -->
-    <script src="~/js/jquery.countTo.js"></script>
-    <script type="text/javascript">
-        $('.timer').countTo({
-            refreshInterval: 60,
-            formatter: function (value, options) {
-                return value.toFixed(options.decimals);
-            },
-        });</script>
-    <!-- / facts counter -->
-    <!-- portfolio script -->
-    <script src="~/js/jquery.shuffle.min.js"></script>
-    <script src="~/js/custom.js"></script>
-    <!-- / portfolio script -->
-    <!-- posts carousel -->
-    <script src="~/js/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#posts-carousel").owlCarousel({
-                items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-            });
+                        </div><!-- / page-content-wrapper -->
+                        </div><!-- / wrapper -->
+                        <!-- javascript -->
+                        <script src="~/js/jquery.min.js"></script>
+                        <script src="~/js/bootstrap.min.js"></script>
+                        <script src="~/js/jquery.easing.min.js"></script>
+                       
+                        <!-- menu toggle script -->
+                        <script>
+                            $("#menu-toggle").click(function (e) {
+                                e.preventDefault();
+                                $("#wrapper").toggleClass("toggled");
+                            });
+                        </script>
+                        <!-- / menu toggle script -->
+                        <!-- nav scroll -->
+                        <script src="~/js/scrolling-nav.js"></script>
+                        <script>
+                            $(".sidebar-nav a").on("click", function () {
+                                $(".sidebar-nav").find(".active").removeClass("active");
+                                $(this).parent().addClass("active");
+                            });
+                        </script>
+                        <!-- / nav scroll -->
+                        <!-- contact form -->
+                        <script src="~/js/validator.min.js" type="text/javascript"></script>
+                        <script src="~/js/form-scripts.js" type="text/javascript"></script>
+                        <!-- / contact form -->
+                        <!-- facts counter -->
+                        <script src="~/js/jquery.countTo.js"></script>
+                        <script type="text/javascript">
+                            $('.timer').countTo({
+                                refreshInterval: 60,
+                                formatter: function (value, options) {
+                                    return value.toFixed(options.decimals);
+                                },
+                            });</script>
+                        <!-- / facts counter -->
+                        <!-- portfolio script -->
+                        <script src="~/js/jquery.shuffle.min.js"></script>
+                        <script src="~/js/custom.js"></script>
+                        <!-- / portfolio script -->
+                        <!-- posts carousel -->
+                        <script src="~/js/owl.carousel.min.js"></script>
+                        <script>
+                            $(document).ready(function () {
+                                $("#posts-carousel").owlCarousel({
+                                    items: 3,
+                                    itemsDesktop: [1199, 3],
+                                    itemsDesktopSmall: [979, 3]
+                                });
 
-        });
-    </script>
-    <!-- / posts carousel -->
-    <!-- hide nav -->
-    <script src="~/js/hide-nav.js"></script>
-    <!-- / hide nav -->
-    <!-- / javascript -->
-    <script src="~/js/allexe.js"></script>
-    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
-    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
-    <script type="text/javascript">
-        SyntaxHighlighter.all()
-    </script>
+                            });
+                        </script>
+                        <!-- / posts carousel -->
+                        <!-- hide nav -->
+                        <script src="~/js/hide-nav.js"></script>
+                        <!-- / hide nav -->
+                        <!-- / javascript -->
+                        <script src="~/js/allexe.js"></script>
+                        <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+                        <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+                        <script type="text/javascript">
+                            SyntaxHighlighter.all()
+                        </script>
 
-</body>
+                    </body>
 </html>
 
 
