@@ -204,6 +204,7 @@
     <Content Include="images\htmlcssjs image.jpg" />
     <Content Include="images\index.png" />
     <Content Include="images\jquery logo.png" />
+    <Content Include="images\jqueryimagenew.jpg" />
     <Content Include="images\js.png" />
     <Content Include="images\js4.png" />
     <Content Include="images\jsgreen.png" />
@@ -214,6 +215,7 @@
     <Content Include="images\myblogimage.png" />
     <Content Include="images\mybugtrackerimage.png" />
     <Content Include="images\mycms.png" />
+    <Content Include="images\myfinacialportal.png" />
     <Content Include="images\paliindrome1.jpg" />
     <Content Include="images\palindrome.jpg" />
     <Content Include="images\plain.jpg" />
@@ -221,6 +223,7 @@
     <Content Include="images\single-post.jpg" />
     <Content Include="images\single-project.jpg" />
     <Content Include="images\sp.png" />
+    <Content Include="images\sqlimagenew2.jpg" />
     <Content Include="images\ssms image.png" />
     <Content Include="images\sumofallfears.jpg" />
     <Content Include="js\allexe.js" />
