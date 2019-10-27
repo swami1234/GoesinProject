@@ -57,8 +57,8 @@
                 <li class="sidebar-brand">
                     <a href="#"><img src="~/images/ccc.jpg" alt=""></a>
                 </li>
-                <li class="active">
-                    <a class="menu-item page-scroll" href="#home">Home</a>
+                <li class="active" >
+                    <a class="menu-item page-scroll"  href="#home">Home</a>
                 </li>
                 <li class="active">
                     <a class="menu-item page-scroll" href="#about">About Me</a>
@@ -113,7 +113,7 @@
                                 <h2><span class="text"></span></h2>
                             </div>
                             <div class=" row h5">
-                                <p><font color="white">EAT,</font></p>
+                                <p><font color="white">EAT</font></p>
                             </div>
                             <div class=" row h4">
                                 <p><font color="white">SLEEP</font></p>
@@ -474,7 +474,7 @@
 
                                             <!--Card image-->
                                             <div class="view overlay">
-                                                <img class="card-img-top" src="~/images/myblogimage.png" alt="Card image cap">
+                                                <img class="card-img-top" src="~/images/latestspblogimage.png" alt="Card image cap">
                                                 <a href="#!">
                                                     <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -538,7 +538,7 @@
 
                                             <!--Card image-->
                                             <div class="view overlay">
-                                                <img class="card-img-top" src="~/images/mybugtrackerimage.png" alt="Card image cap">
+                                                <img class="card-img-top" src="~/images/newbugtrackerimage.png"y"? alt="Card image cap">
                                                 <a href="#!">
                                                     <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -767,10 +767,247 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title text-center">Math Exercise</h4>
+                    <br/>
+                    <h5 class="text-center"><p>Let's Add, Multiply, Find Min, Find Max and Average Numbers... </p></h5>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <div class=" container">
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 h4">Enter Number 1:</div>
+
+                            <div class=" col-md-6">
+
+                                <input id="one" type="number" class="formInput" />
+
+                            </div>
+
+                        </div>
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 h4">Enter Number 2:</div>
+
+                            <div class=" col-md-6">
+
+                                <input id="two" type="number" class="formInput" />
+
+                            </div>
+
+                        </div>
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 h4">Enter Number 3:</div>
+
+                            <div class=" col-md-6">
+
+                                <input id="three" type="number" class="formInput" />
+
+                            </div>
+
+                        </div>
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 h4">Enter Number 4:</div>
+
+                            <div class=" col-md-6">
+
+                                <input id="four" type="number" class="formInput" />
+
+                            </div>
+
+                        </div>
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 h4">Enter Number 5:</div>
+
+                            <div class=" col-md-6">
+
+                                <input id="five" type="number" class="formInput" />
+
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class="btn btn-primary" id="btnclick">calculate</button>
+
+                            </div>
+
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class="btn btn-primary" id="checks">Show/Hide</button>
+
+                            </div>
+                            
+                        </div>
+
+                        <hr />
+
+                        <div class=" row">
+
+                            <div class=" col-md-5">
+
+                                <div class=" row">
+
+                                    <div class=" col-md-2 h5">
+
+                                        Min:
+
+                                    </div>
+
+                                    <div class=" col-md-10 text-center h5">
+
+                                        <p id="minresult" class="formInput"></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" row">
+
+                                    <div class=" col-md-2 h5">
+
+                                        Max:
+
+                                    </div>
+
+                                    <div class=" col-md-10 text-center h5">
+
+                                        <p id="maxresult" class="formInput"></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" row">
+
+                                    <div class=" col-md-2 h5">
+
+                                        Sum:
+
+                                    </div>
+
+                                    <div class=" col-md-10 text-center h5">
+
+                                        <p id="sumresult" class="formInput"></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" row">
+
+                                    <div class=" col-md-2 h5">
+
+                                        Mean:
+
+                                    </div>
+
+                                    <div class=" col-md-10 text-center h5">
+
+                                        <p id="meanresult" class="formInput"></p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" row">
+
+                                    <div class=" col-md-2 h5">
+
+                                        Product:
+
+                                    </div>
+
+                                    <div class=" col-md-10 text-center h5">
+
+                                        <p id="productresult" class="formInput"></p>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class=" col-md-7 text-center h6">
+
+                                <div id="syntaxresult" class="formInput">
+
+                                    <pre class="brush: js">
+
+                                                                                           $("#btnclick").click(function () {
+
+
+
+                                                                                         var num1 = +$("#one").val();
+
+                                                                                         var num2 = +$("#two").val();
+
+                                                                                         var num3 = +$("#three").val();
+
+                                                                                         var num4 = +$("#four").val();
+
+                                                                                         var num5 = +$("#five").val();
+
+
+
+                                                                                         var min = Math.min(num1, num2, num3, num4, num5);
+
+                                                                                         $("#minresult").text(min);
+
+
+
+                                                                                         var max = Math.max(num1, num2, num3, num4, num5);
+
+                                                                                         $("#maxresult").text(max);
+
+
+
+                                                                                         var sum = num1 + num2 + num3 + num4 + num5;
+
+                                                                                         $("#sumresult").text(sum);
+
+
+
+                                                                                         var mean = sum / 5;
+
+                                                                                         $("#meanresult").text(mean);
+
+
+
+                                                                                         var product = num1 * num2 * num3 * num4 * num5;
+
+                                                                                         $("#productresult").text(product);
+
+                                                                                 
+
+                                                                                        });
+
+                                                                                        </pre>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -778,7 +1015,10 @@
             </div>
 
         </div>
+
     </div>
+
+
 
     <div class="modal fade" id="portfolioModalf" role="dialog">
         <div class="modal-dialog">
@@ -787,18 +1027,125 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title text-center">Factorial</h4>
+                    <h5 class="text-center"><p>Enter any number to calculate factorial</p></h5>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <div class=" container">
+
+                        <div class=" row">
+
+
+
+                            <div class=" col-md-12 text-center h3">
+
+                                <input id="num1" type="number" class="formInput" placeholder="Enter Number" />
+
+                            </div>
+
+                        </div>
+                        <hr />
+                        <div class=" row">
+
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class=" btn btn-primary" id="btnfact">Factorial</button>
+
+                            </div>
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class=" btn btn-primary" id="btnfact1">Show Code</button>
+
+                            </div>
+                           
+                        </div>
+
+
+
+                        <div class=" row">
+
+                            <div class=" col-md-6 text-center h3">
+
+                                Result:
+
+                            </div>
+
+                            <div class=" col-md-6 h1">
+
+                                <p id="factResult"></p>
+
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                       
+
+                      
+
+                        <div class=" row">
+
+                            <div class=" col-md-12 text-center h5">
+
+                                <div id="here" class="formInput">
+
+                                    <pre class="brush: js">
+
+                                                                                           
+
+
+
+                                                                                            function show1() {
+
+
+
+                                                                                            var i, no, fact;
+
+                                                                                            fact = 1;
+
+                                                                                            no = Number(document.getElementById("num1").value);
+
+                                                                                            for (i = 1; i <= no; i++) {
+
+                                                                                                fact = fact * i;
+
+                                                                                            }
+
+                                                                                            document.getElementById("answer1").value = fact;
+
+                                                                                        }
+
+                                                                                        </pre>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
                 </div>
+
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-            </div>
 
+
+            </div>
         </div>
+
     </div>
+
+
 
     <div class="modal fade" id="portfolioModalp" role="dialog">
         <div class="modal-dialog">
@@ -807,18 +1154,115 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title text-center">Palindrome</h4>
+                    <br/>
+                    <h5 class="text-center"><p>Enter a word to check if the word reads the same backward as forward. </p></h5>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <div class="container">
+                        <div class=" row">
+
+
+
+                            <div class=" col-md-12 text-center h3">
+
+                                Enter any word: <input type="text" id="text1">
+                                <hr />
+
+                            </div>
+                            <div class=" row">
+                                <div class=" col-md-6 text-center h4">
+
+                                    <button class=" btn btn-primary" id="pali1">Check</button>
+
+                                </div>
+                                <div class=" col-md-6 text-center h4">
+
+                                    <button class=" btn btn-primary" id="btn1">Show Code</button>
+
+                                </div>
+                                <div class=" row">
+
+                                    <div class=" col-md-12 text-center h5">
+
+                                        <div id="pp" class="formInput">
+
+                                            <pre class="brush: js">
+
+                                                                                           
+
+
+
+                                                                                                                       $("#pali1").click(function () {
+
+
+
+                                                                                                                revString = ""; // create a variable name revString which stores input string reversely in this varaiable.
+
+                                                                                                                inpString = document.getElementById("text1").value;// creating input variable and storing input value from text field.
+
+                                                                                                                // var input = $("#txtword").val();
+
+                                                                                                                i = inpString.length; // creating a variable i and assigning the input string to it, which number of characters in input string.
+
+
+
+                                                                                                                for (var j = i; j >= 0; j--) //looping through input string in reverse order. >= means greater than equal to 1.
+
+                                                                                                                {
+
+                                                                                                                    revString = revString + inpString.charAt(j);
+
+                                                                                                                    //  document.write(revString + "<br>"); outputing revString on web page. this helps us chek if we are getting reverse string or not.
+
+                                                                                                                }
+
+
+
+                                                                                                                if (inpString.toLowerCase() === revString.toLowerCase()) {               // === means equal in both value and type.
+
+                                                                                                                    alert(inpString + " is a Palindrome.");
+
+                                                                                                                }
+
+                                                                                                                else {
+
+                                                                                                                    alert(inpString + " is not a Palindrome.");
+
+                                                                                                                }
+
+                                                                                                            });
+
+                                                                                        </pre>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+
+
+
+
+
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+
             </div>
 
         </div>
+
     </div>
+
 
     <div class="modal fade" id="portfolioModalfb" role="dialog">
         <div class="modal-dialog">
@@ -827,18 +1271,157 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title text-center">Fizz Buzz</h4>
+                    <br/>
+                    <h5 class="text-center"><p>Enter any two numbers from 1 to 100. Multiples of first number prints "Fizz" and multiples of second number prints "Buzz". Multiples of both number prints "FizzBuzz". </p></h5>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <div class=" container-fluid">
+
+                        <div class=" row h3">Fizz-Buzz</div>
+
+
+
+                        <div class="row">
+
+                            <div class="col-md-6 text-center h4">
+
+                                <p>Enter the Fizz Number:</p>
+
+                                <input id="fizzNum1" type="number" name="fizz" class="formInput" value="3" />
+
+                            </div>
+
+                            <div class="col-md-6 text-center h4">
+
+                                <p>Enter the Buzz Number:</p>
+
+                                <input id="buzzNum1" type="number" name="buzz" class="formInput" value="5" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12 text-center">
+
+                                <button class=" btn btn-primary" id="fb1">Show</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+
+                                <p id="fbResult1" class="h4 formInput"></p>
+
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                        <div class=" row text-center">
+
+                            <button class=" btn btn-primary" id="fb2">Show Code</button>
+
+                        </div>
+
+                        <div class=" row">
+
+                            <div class=" col-md-12 text-center h6">
+
+                                <div id="Sr" class="formInput">
+
+                                    <pre class="brush: js">
+
+                                                                                          function FizzBuzzA(value1, value2) {
+
+            let returnValue = "";
+
+            for (let i = 1; i <= 100; i++) {
+
+                if (i % value1 == 0 && i % value2 == 0) {
+
+                    returnValue += 'FizzBuzz ';
+
+                }
+
+                else if (i % value1 == 0) {
+
+                    returnValue += 'Fizz ';
+
+                }
+
+                else if (i % value2 == 0) {
+
+                    returnValue += 'Buzz ';
+
+                }
+
+                else {
+
+                    returnValue += i + ' ';
+
+                }
+
+            }
+
+            return returnValue;
+
+        }
+
+        function check1() {
+
+            let output = "";
+
+            let val1 = document.getElementById('fizzNum1').value;
+
+            let val2 = document.getElementById('buzzNum1').value;
+
+            output = FizzBuzzA(val1, val2);
+
+            document.getElementById('fbResult1').innerText = output;
+
+        }
+
+
+
+                                                                                        });
+
+                                                                                        </pre>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
                 </div>
                 <div class="modal-footer">
+
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
                 </div>
             </div>
 
         </div>
+
     </div>
+
+   
+
+   
+  
 
     <div class="modal fade" id="portfolioModal" role="dialog">
         <div class="modal-dialog">
@@ -847,11 +1430,127 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title text-center">Sum Of All Fears</h4>
+                    <br/>
+                    <h5 class="text-center"><p>The Sum of All Fears coding challenge involves an array of integers and some number called 'k'. If'K can be derived from adding any two numbers from the array then it is said to contain that 'k' value. If given an array = [10,4,6,7] and a 'k' value of 17, the array contains the 'k' value because 10 + 7 = 'k' </p></h5>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            <p>Create a searchable array by entering 6 numbers</p>
+                            <div class="col-sm-4">
+                                <input id="Num1" type="number" class="formInput" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="Num2" type="number" class="formInput" />
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="Num3" type="number" class="formInput" />
+                            </div>
+                        </div>
+                        <br/>
+                        <div class=" row">
+                            <div class="col-sm-4">
+                                <input id="Num4" type="number" class="formInput" />
+                            </div>
+                           
+                            <div class="col-sm-4">
+                                <input id="Num5" type="number" class="formInput" />
+                            </div>
+                         
+                            <div class="col-sm-4">
+                                <input id="Num6" type="number" class="formInput" />
+                            </div>
+                        </div>
+                      
+                      
+
+                    </div>
+                    <br/>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>Establish a k value by entering a number</p>
+                                <input id="Numk" type="number" class="formInput" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class=" btn btn-primary" id="btns">Search</button>
+
+                            </div>
+                            <div class=" col-md-6 text-center h4">
+
+                                <button class=" btn btn-primary" id="btnToggleSOAF">Show Code</button>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-12 text-center">
+
+                                    <p id="fearOut">
+
+                                        <!-- Output here-->
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class=" row">
+
+                                <div class=" col-md-12 text-center h6">
+
+                                    <div id="code-display-soaf" class="formInput">
+
+                                        <pre class="brush: js">
+
+                                                                                        $("#btns").click(function () {
+            var myArray = new Array();
+            myArray.push(+$("#Num1").val());
+            myArray.push(+$("#Num2").val());
+            myArray.push(+$("#Num3").val());
+            myArray.push(+$("#Num4").val());
+            myArray.push(+$("#Num5").val());
+            myArray.push(+$("#Num6").val());
+
+
+            var kvalue = +$("#Numk").val();
+
+
+            for (index = 0, found = false; index <= myArray.length - 1; index++) {
+                var position = myArray.indexOf(kvalue - myArray[index], index + 1);
+                if (position > 0) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                $("#fearOut").html("" + kvalue + " was found by adding" + " " + myArray[index] + " and " + myArray[position] + "");
+                return;
+            }
+
+            else {
+                $("#fearOut").text(" not found");
+            }
+
+        });
+
+      
+
+
+
+                                                                                        </pre>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -901,6 +1600,64 @@
     <!-- / portfolio script -->
     <!-- posts carousel -->
     <script src="~/js/owl.carousel.min.js"></script>
+    <script>
+        $('#code-display-soaf').hide();
+
+        $("#btnToggleSOAF").click(function () {
+
+            $("#code-display-soaf").toggle();
+
+
+
+            if ($(this).text() == "Show Code") {
+
+                $(this).text("Hide Code");
+
+            } else {
+
+                $(this).text("Show Code");
+
+            }
+
+        })
+
+        $("#btns").click(function () {
+            var myArray = new Array();
+            myArray.push(+$("#Num1").val());
+            myArray.push(+$("#Num2").val());
+            myArray.push(+$("#Num3").val());
+            myArray.push(+$("#Num4").val());
+            myArray.push(+$("#Num5").val());
+            myArray.push(+$("#Num6").val());
+
+
+            var kvalue = +$("#Numk").val();
+
+
+            for (index = 0, found = false; index <= myArray.length - 1; index++) {
+                var position = myArray.indexOf(kvalue - myArray[index], index + 1);
+                if (position > 0) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                $("#fearOut").html("" + kvalue + " was found by adding" + " " + myArray[index] + " and " + myArray[position] + "");
+                return;
+            }
+
+            else {
+                $("#fearOut").text(" not found");
+            }
+
+        });
+
+
+
+
+
+    </script>
+
     <script>
         $(document).ready(function () {
             $("#posts-carousel").owlCarousel({
