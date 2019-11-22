@@ -184,7 +184,9 @@
     <Content Include="images\bootstrap5.png" />
     <Content Include="images\ccc.jpg" />
     <Content Include="images\clogo.png" />
+    <Content Include="images\comings1.png" />
     <Content Include="images\comingsoon.jpg" />
+    <Content Include="images\cs.png" />
     <Content Include="images\css.png" />
     <Content Include="images\css1.png" />
     <Content Include="images\css2.jpg" />
@@ -218,6 +220,7 @@
     <Content Include="images\mybugtrackerimage.png" />
     <Content Include="images\mycms.png" />
     <Content Include="images\myfinacialportal.png" />
+    <Content Include="images\newbt.png" />
     <Content Include="images\newbugtrackerimage.png" />
     <Content Include="images\paliindrome1.jpg" />
     <Content Include="images\palindrome.jpg" />
